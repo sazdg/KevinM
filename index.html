@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<?php
+    include("config.php");
+?>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> KEVIN MALONE'S secret world</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Kevin Malone by sdg" />
+    <link rel="stylesheet" href="stile.css">
+    <!--JQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Boostrap CSS CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--Bootstrap Javascript CDN-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid row" id="App">
+        <h2>LOG INTO KEVIN MALONE'S SECRET WORLD</h2>
+        <p> Guess the password to enter the website <br />
+            You will be redirect to Kevin's world<br />
+            Trust me you want to go there! </p>
+
+        <p> Username: KevinM </p>
+    </div>
+
+    <div class="container-fluid row" id="Input-Form">
+        <form action="./data/login.php" method="post">
+            <label>Name <br />
+                <input type="text" class="InputType" name="nome" required />
+            </label>
+            <br />
+
+            <label>Password<br />
+                <input type="password" class="InputType" name="password" required />
+            </label>
+            <br />
+
+            <input type="submit" value="Submit" id="InputSubmit" class="btn btn-primary" />
+            <br />
+
+        </form>
+    </div>
+
+    <footer class="container-fluid">
+        <p>Tips: there are 3 existing passwords possible, think about his favorite things.</p>
+    </footer>
+</body>
+
+</html>
