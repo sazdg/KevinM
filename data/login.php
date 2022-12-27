@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta name="description" content="Kevin Malone by sdg" />
-        <link rel="stylesheet" href="stile.css">
+        <link rel="stylesheet" href="../stile.css">
         <!--JQuery CDN-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!--Boostrap CSS CDN-->
@@ -46,13 +46,13 @@ function faiLogin($connessione,$nome,$psw){
                 echo "<div class='container-fluid row text-center'><p>NOPE, heheheh </p></div>";
             }
         } else {
-            echo "nessun risultato";
+            echo "<div class='container-fluid row text-center'><p>Nessun risultato...</p></div>";
         }
     }
 }
 
 $x = faiLogin($connessione,$nome,$psw);
-
+echo "<button type='button' class='btn btn-primary text-center mt-4' onClick='history.back()'>Back";
 ?>
 
     </body>
